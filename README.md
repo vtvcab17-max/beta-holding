@@ -28,9 +28,12 @@ Beta Holding là thực thể bảo trợ và chỉ đạo tối cao toàn bộ 
    - Tự động chuyển đổi sang mô hình AI miễn phí/local khi thiếu token để không bao giờ dừng hoạt động.
 2. **Săn tìm GitHub Repos (`src/tools/github-scout.ts`):**
    - Tự động quét GitHub API định kỳ để tìm kiếm các công nghệ mở (WebCodecs, AI Video, Canvas, WASM) và cập nhật vào `SCOUTED_REPOS.md`.
-3. **Quản trị dòng tiền mặt (`src/finance/paypal-bridge.ts`):**
+3. **Săn cơ hội Airdrop (`.paperclip.yaml`):**
+   - Đã cấu hình routine hằng ngày giao tác tử `airdrop-hunter` rà soát chiến dịch công khai, chỉ ghi nhận cơ hội có nguồn chính thức, điều kiện tham gia, thời hạn và chi phí rõ ràng vào `AIRDROP_TARGETS.md`.
+   - Đây là tác vụ nghiên cứu; không tự kết nối ví, ký giao dịch, claim token, chuyển tiền hay hứa hẹn lợi nhuận.
+4. **Quản trị dòng tiền mặt (`src/finance/paypal-bridge.ts`):**
    - Toàn bộ doanh thu bán ứng dụng Bravinall được điều hướng trực tiếp về tài khoản cá nhân của **Phạm Việt Hà** qua PayPal (`vtvcab17@gmail.com`) và VietQR.
-4. **Tự khởi động cùng máy tính (`Beta-Never-Die.bat`):**
+5. **Tự khởi động cùng máy tính (`Beta-Never-Die.bat`):**
    - Đã nạp vào Windows Startup để tự động chạy ngầm mỗi khi bật máy.
 
 ---

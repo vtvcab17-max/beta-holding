@@ -50,6 +50,14 @@ agents:
       config:
         model: auto
 
+  airdrop-hunter:
+    title: Thợ săn cơ hội Airdrop
+    description: Tìm chiến dịch airdrop công khai từ nguồn chính thức, xác minh điều kiện, thời hạn, chi phí và rủi ro, rồi cập nhật AIRDROP_TARGETS.md. Chỉ nghiên cứu và báo cáo; không tự kết nối ví, ký giao dịch, claim token, chuyển tiền hoặc tiết lộ dữ liệu cá nhân.
+    adapter:
+      type: gemini_local
+      config:
+        model: auto
+
 
 routines:
   heartbeat-survival-check:
@@ -80,6 +88,13 @@ routines:
         cronExpression: "0 */2 * * *"
         timezone: Asia/Ho_Chi_Minh
 
+  airdrop-opportunity-scouting:
+    description: Hằng ngày tìm cơ hội airdrop từ nguồn chính thức, lọc chiến dịch hết hạn hoặc thiếu căn cứ, cập nhật AIRDROP_TARGETS.md
+    triggers:
+      - kind: schedule
+        cronExpression: "0 8 * * *"
+        timezone: Asia/Ho_Chi_Minh
+
 tasks:
   thiet-lap-nhip-tim-sinh-ton:
     priority: urgent
@@ -93,6 +108,9 @@ tasks:
   san-tim-bounty-github:
     priority: high
     assignedTo: bounty-hunter
+  san-tim-airdrop:
+    priority: high
+    assignedTo: airdrop-hunter
   dieu-phoi-muc-tieu-bravinall:
     priority: high
     assignedTo: supreme-orchestrator

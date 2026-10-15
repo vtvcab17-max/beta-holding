@@ -57,6 +57,9 @@ npx tsx src/survival/heartbeat.ts
 # Kích hoạt Agent quét tìm repo công nghệ mới:
 npx tsx src/tools/github-scout.ts
 
+# Chạy mô phỏng spot lịch sử (paper trading, không đặt lệnh thật):
+npm run paper-trade
+
 # Chạy web server xem trên máy:
 python3 -m http.server 8080
 # Mở trình duyệt tại: http://localhost:8080/

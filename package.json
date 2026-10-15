@@ -9,6 +9,7 @@
     "heartbeat": "tsx src/survival/heartbeat.ts",
     "scout": "tsx src/tools/github-scout.ts",
     "paypal-check": "tsx src/finance/paypal-bridge.ts",
+    "paper-trade": "tsx src/trading/paper-trader.ts",
     "start": "tsx src/index.ts"
   },
   "keywords": [
